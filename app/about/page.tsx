@@ -10,13 +10,13 @@ export default function AboutPage() {
     const team = [
         {
             name: "Gabriel Himie Wilson",
-            role: "Architect & Design / Founder",
+            role: "Chief Architect / Founder",
             bio: "Driving the architectural vision with over 15 years of experience in structural fabrication and parametric design.",
             image: "/gab.jpeg"
         },
         {
             name: "Roland ",
-            role: "Head of 3D Visualization",
+            role: "Architect & Constructor",
             bio: "Leading our cinematic rendering department, ensuring every architectural design is presented with life-like fidelity.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwel83yexCP55LtI72ogmeT5ABAyTkeEYbyCCPnaBOx2cZHaCdaQlEZorwim6UO3-eC_j-YUinH0AhJVU9wgn2SJjuRwTCUDFhXipVIyneVZ4F-7o_g_8HcurlbykI2-UVQoHlFcvJxuZviP9Vj1bqDW6bfR6RKkEFYY1WI89kPQZCuHbqcGrrjNWKpsatV0B_uNlguuzfWENGdIwE-0PWKEg3GphFpABmLrFQbsFTWXRmyeZd0zG0p2_PdLbQehGXg2H27a64eNU"
         },
