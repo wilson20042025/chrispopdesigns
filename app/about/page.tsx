@@ -73,7 +73,7 @@ export default function AboutPage() {
                             <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-content leading-none">Meet Our Team.</h2>
                         </div>
                         <p className="text-muted text-sm max-w-xs font-light leading-relaxed">
-                            A collective of experts bridging the gap between digital vision and physical assembly.
+                            We help shape amazing ideas from screen to reality.
                         </p>
                     </div>
 

@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum ProjectType {
+  FABRICATION
+  FLOOR_PLAN
+  HOUSE_PLAN
+  RENDERING
+}
+
+enum SpecType {
+  AREA
+  MATERIAL
+  SCALE
+  CLIENT
+  OTHER
+}
+
+model Project {
+  id        String      @id @default(uuid())
+  type      ProjectType
+  date      DateTime
+  title     String
+  brief     String      @db.Text
+  specType  SpecType
+  specValue String
+  createdAt DateTime    @default(now())
+
+  @@map("projects")
+}
+
+model User {
+  id       String @id @default(uuid())
+  email    String @unique
+  password String
+  name     String?
+
+  @@map("users")
+}
