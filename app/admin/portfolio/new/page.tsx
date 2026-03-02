@@ -1,23 +1,8 @@
-import prisma from '@/lib/prisma'
-import ProjectForm from '@/components/admin/ProjectForm'
+import PortfolioForm from '@/components/admin/PortfolioForm'
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
-import { notFound } from 'next/navigation'
 
-export default async function EditProjectPage({
-    params
-}: {
-    params: Promise<{ id: string }>
-}) {
-    const { id } = await params
-    const project = await prisma.project.findUnique({
-        where: { id }
-    })
-
-    if (!project) {
-        notFound()
-    }
-
+export default function NewPortfolioPage() {
     return (
         <div className="min-h-screen bg-gray-50 p-6 md:p-12">
             <div className="max-w-7xl mx-auto">
@@ -29,9 +14,9 @@ export default async function EditProjectPage({
                     Back to Dashboard
                 </Link>
 
-                <h1 className="text-4xl font-black uppercase tracking-tighter mb-12">Edit Project Details.</h1>
+                <h1 className="text-4xl font-black uppercase tracking-tighter mb-12">New Portfolio Item.</h1>
 
-                <ProjectForm initialData={project} isEditing />
+                <PortfolioForm />
             </div>
         </div>
     )

@@ -6,32 +6,22 @@ datasource db {
   provider = "postgresql"
 }
 
-enum ProjectType {
-  FABRICATION
-  FLOOR_PLAN
-  HOUSE_PLAN
-  RENDERING
-}
+model Portfolio {
+  id          String   @id @default(uuid())
+  slug        String   @unique
+  title       String
+  category    String
+  year        String
+  location    String
+  client      String
+  description String   @db.Text
+  heroImage   String
+  details     Json     // Array of {label, value}
+  gallery     String[] // Array of image URLs
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
-enum SpecType {
-  AREA
-  MATERIAL
-  SCALE
-  CLIENT
-  OTHER
-}
-
-model Project {
-  id        String      @id @default(uuid())
-  type      ProjectType
-  date      DateTime
-  title     String
-  brief     String      @db.Text
-  specType  SpecType
-  specValue String
-  createdAt DateTime    @default(now())
-
-  @@map("projects")
+  @@map("portfolio")
 }
 
 model User {
