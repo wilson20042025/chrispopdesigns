@@ -1,4 +1,5 @@
 import prisma from '@/lib/prisma'
+export const dynamic = 'force-dynamic'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { notFound } from 'next/navigation'
