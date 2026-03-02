@@ -21,8 +21,9 @@ export default function Header() {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        { name: 'Projects', href: '/projects' },
-        { name: 'Contact', href: '/#contact' },
+        { name: 'Portfolio', href: '/portfolio' },
+        { name: 'About', href: '/about' },
+        { name: 'Contact', href: '/contact' },
     ];
 
     return (
@@ -30,7 +31,7 @@ export default function Header() {
             <nav className="max-w-7xl mx-auto px-6 md:px-16 h-20 flex items-center justify-between font-display relative">
                 {/* Logo - Stays above drawer */}
                 <Link href="/" className="flex items-center gap-2 group z-[110]">
-                    <div className="w-10 h-10 bg-primary/10 flex items-center justify-center rounded transition-colors group-hover:bg-primary/20">
+                    <div className="w-10 h-10 bg-primary/10 flex items-center justify-center transition-colors group-hover:bg-primary/20">
                         <span className="material-symbols-outlined text-primary text-2xl">architecture</span>
                     </div>
                     <span className="text-xl font-bold tracking-tighter text-content uppercase">ChrisPopDesign</span>

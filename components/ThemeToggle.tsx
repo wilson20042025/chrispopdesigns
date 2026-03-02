@@ -28,14 +28,14 @@ export default function ThemeToggle() {
     // Prevent hydration mismatch by only rendering the toggle content on the client
     if (!mounted) {
         return (
-            <div className="w-10 h-10 flex items-center justify-center rounded-full border border-subtle bg-sub" />
+            <div className="w-10 h-10 flex items-center justify-center border border-subtle bg-sub" />
         );
     }
 
     return (
         <button
             onClick={toggleTheme}
-            className="w-10 h-10 flex items-center justify-center rounded-full border border-subtle bg-sub hover:bg-sub/80 transition-all shadow-sm"
+            className="w-10 h-10 flex items-center justify-center border border-subtle bg-sub hover:bg-sub/80 transition-all"
             aria-label="Toggle Theme"
         >
             <span className="material-symbols-outlined text-xl text-content">
