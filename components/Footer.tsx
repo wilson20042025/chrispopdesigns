@@ -9,7 +9,7 @@ export default function Footer() {
                         <div className="w-10 h-10 bg-primary/10 flex items-center justify-center transition-colors hover:bg-primary/20">
                             <span className="material-symbols-outlined text-primary text-2xl">architecture</span>
                         </div>
-                        <span className="text-xl font-bold tracking-tighter text-content uppercase font-display">ChrisPopDesign</span>
+                        <span className="text-xl font-bold tracking-tighter text-content uppercase font-display">ChrisPopDesigns Inc</span>
                     </div>
                     <p className="text-muted text-xs md:text-sm max-w-sm mx-auto md:mx-0 font-light leading-relaxed">
                         A multi-disciplinary design firm specializing in house plan designs, cinematic renderings, and the future of architectural fabrication.
@@ -19,7 +19,7 @@ export default function Footer() {
                     <h5 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-6 md:mb-8 text-content">Contact</h5>
                     <ul className="text-muted text-xs md:text-sm space-y-4 font-light">
                         <li className="hover:text-primary transition-colors cursor-pointer">hello@chrispopdesign.com</li>
-                        <li>+1 (555) 012-3456</li>
+                        <li><a href="https://wa.me/15550123456" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+1 (555) 012-3456</a></li>
                         <li>1200 Industrial Ave, Seattle</li>
                     </ul>
                 </div>
@@ -41,8 +41,8 @@ export default function Footer() {
                 </div>
             </div>
             <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-subtle flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] md:text-[10px] uppercase tracking-widest text-muted text-center md:text-left">
-                <span>© 2024 ChrisPopDesign Firm. All rights reserved.</span>
-                <span className="text-muted/50">Design by ChrisPopDesign Digital</span>
+                <span>© 2024 ChrisPopDesigns Inc. All rights reserved.</span>
+                <span className="text-muted/50">Design by ChrisPopDesigns Digital</span>
             </div>
         </footer>
     );

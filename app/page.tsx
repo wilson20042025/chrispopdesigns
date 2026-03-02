@@ -167,7 +167,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-content mb-6">Ready to Build?</h2>
             <p className="text-muted text-xs md:text-sm font-light leading-relaxed max-w-xl mx-auto mb-8">Transforming complex visions into tangible structures through the intersection of design and craft.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-[10px] font-bold uppercase tracking-widest transition-all">Start Project</button>
+              <a
+                href="https://wa.me/15550123456?text=Hi, I'm interested in starting an architectural project."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-[10px] font-bold uppercase tracking-widest transition-all text-center"
+              >
+                Start Project
+              </a>
               <button className="border border-subtle hover:bg-sub text-content px-8 py-4 text-[10px] font-bold uppercase tracking-widest transition-all">Download Brochure</button>
             </div>
           </div>

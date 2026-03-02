@@ -22,7 +22,7 @@ export default function Header() {
     const navLinks = [
         { name: 'Home', href: '/' },
         { name: 'Portfolio', href: '/portfolio' },
-        { name: 'About', href: '/about' },
+        { name: 'About Us', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ];
 
@@ -34,7 +34,7 @@ export default function Header() {
                     <div className="w-10 h-10 bg-primary/10 flex items-center justify-center transition-colors group-hover:bg-primary/20">
                         <span className="material-symbols-outlined text-primary text-2xl">architecture</span>
                     </div>
-                    <span className="text-xl font-bold tracking-tighter text-content uppercase">ChrisPopDesign</span>
+                    <span className="text-lg md:text-xl font-bold tracking-tighter text-content uppercase">ChrisPopDesigns Inc</span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -52,9 +52,14 @@ export default function Header() {
 
                 <div className="flex items-center gap-3 md:gap-6 z-[110]">
                     <ThemeToggle />
-                    <button className="hidden sm:block bg-primary hover:bg-primary/90 text-white px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest transition-all">
+                    <a
+                        href="https://wa.me/15550123456?text=Hi, I'm interested in a quote for architectural design."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hidden sm:block bg-primary hover:bg-primary/90 text-white px-6 py-2.5 text-[10px] font-bold uppercase tracking-widest transition-all text-center"
+                    >
                         Quote
-                    </button>
+                    </a>
 
                     {/* Mobile Menu Toggle Button */}
                     <button
@@ -95,17 +100,20 @@ export default function Header() {
 
                         <div className={`w-12 h-0.5 bg-subtle my-8 transition-all duration-700 delay-500 ${isMenuOpen ? 'scale-x-100 opacity-100' : 'scale-x-0 opacity-0'}`}></div>
 
-                        <button
-                            className={`bg-primary text-white w-full py-5 text-xs font-bold uppercase tracking-widest transition-all duration-700 delay-700 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                        <a
+                            href="https://wa.me/15550123456?text=Hi, I'm interested in a quote for architectural design."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`bg-primary text-white w-full py-5 text-xs font-bold uppercase tracking-widest transition-all duration-700 delay-700 transform text-center ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                                 }`}
                         >
                             Request Quote
-                        </button>
+                        </a>
 
                         <div className={`mt-12 flex flex-col gap-2 text-muted text-[10px] uppercase tracking-[0.4em] transition-all duration-700 delay-1000 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                             }`}>
-                            <span>hello@chrispopdesign.studio</span>
-                            <span>+1 (555) 012-3456</span>
+                            <span>hello@chrispopdesign.com</span>
+                            <a href="https://wa.me/15550123456" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+1 (555) 012-3456</a>
                         </div>
                     </div>
                 </div>

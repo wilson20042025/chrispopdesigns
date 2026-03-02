@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ChrisPopDesign | Architecture Design & 3D Fabrication",
-  description: "From Concept to Creation: Expert Architecture & Precision 3D Fabrication",
+  title: "ChrisPopDesigns Inc | House Plan Design & 3D Rendering",
+  description: "Vision Meets Realization: Professional House Plan Design and Cinematic 3D Rendering",
 };
 
 export default function RootLayout({

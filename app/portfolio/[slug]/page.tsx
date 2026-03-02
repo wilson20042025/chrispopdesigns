@@ -352,9 +352,14 @@ export default function ProjectDetail() {
                         </Link>
 
                         <div className="flex items-center gap-12">
-                            <Link href="/contact" className="text-[10px] font-bold uppercase tracking-[0.4em] text-content hover:text-primary transition-colors">
+                            <a
+                                href="https://wa.me/15550123456?text=Hi, I'm interested in discussing a project similar to this one."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[10px] font-bold uppercase tracking-[0.4em] text-content hover:text-primary transition-colors"
+                            >
                                 Start a Conversation
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </section>

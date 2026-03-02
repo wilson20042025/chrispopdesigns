@@ -61,7 +61,7 @@ export default function AboutPage() {
                                 Our Identity / Philosophy
                             </span>
                             <h1 className="text-5xl md:text-9xl font-black tracking-tighter text-content uppercase leading-[0.8] mb-12 animate-fade-in-up">
-                                We Are <br /> ChrisPop <br /> Design.
+                                We Are <br /> ChrisPopDesigns <br /> Incorporated.
                             </h1>
                         </div>
                         <div className="lg:col-span-7">
@@ -114,7 +114,7 @@ export default function AboutPage() {
                     <div className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
                         <div>
                             <span className="text-primary text-[10px] md:text-xs font-bold uppercase tracking-[0.5em] mb-4 block">Our Excellence</span>
-                            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-content leading-none">The Leadership.</h2>
+                            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter text-content leading-none">Meet Our Team.</h2>
                         </div>
                         <p className="text-muted text-sm max-w-xs font-light leading-relaxed">
                             A collective of experts bridging the gap between digital vision and physical assembly.
@@ -123,7 +123,7 @@ export default function AboutPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-l border-subtle">
                         {team.map((member, i) => (
-                            <div key={i} className="group relative border-r border-b border-subtle aspect-[3/4] overflow-hidden flex flex-col justify-end p-8">
+                            <div key={i} className="group relative border-r border-b border-subtle aspect-[4/3] md:aspect-[3/4] overflow-hidden flex flex-col justify-end p-8">
                                 <div className="absolute inset-0 z-0">
                                     <Image
                                         src={member.image}
@@ -156,9 +156,14 @@ export default function AboutPage() {
                 <section className="py-24 border-t border-subtle">
                     <div className="max-w-7xl mx-auto px-6 md:px-16 flex flex-col items-center text-center">
                         <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-content mb-12">Let's craft the <br /> future together.</h2>
-                        <Link href="/contact" className="bg-content text-base px-16 py-6 text-[10px] font-bold uppercase tracking-[0.4em] hover:bg-primary transition-all duration-500 shadow-xl">
+                        <a
+                            href="https://wa.me/15550123456?text=Hi, I'm interested in collaborating on a design project."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-content text-base px-16 py-6 text-[10px] font-bold uppercase tracking-[0.4em] hover:bg-primary transition-all duration-500 shadow-xl text-center"
+                        >
                             Start a Collaboration
-                        </Link>
+                        </a>
                     </div>
                 </section>
             </main>
