@@ -16,15 +16,15 @@ export default function Footer() {
                     </p>
                 </div>
                 <div className="text-center md:text-left">
-                    <h5 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-6 md:mb-8 text-content">Contact</h5>
+                    <h5 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-6 md:mb-8 text-content">Contact Us</h5>
                     <ul className="text-muted text-xs md:text-sm space-y-4 font-light">
-                        <li className="hover:text-primary transition-colors cursor-pointer">hello@chrispopdesign.com</li>
-                        <li><a href="https://wa.me/15550123456" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+1 (555) 012-3456</a></li>
-                        <li>1200 Industrial Ave, Seattle</li>
+                        <li className="hover:text-primary transition-colors cursor-pointer">chrispopdesigns@gmail.com</li>
+                        <li><a href="https://wa.me/15550123456" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+231 88 679-6691</a></li>
+                        <li>ELWA, Paynesville City, Liberia</li>
                     </ul>
                 </div>
                 <div className="text-center md:text-left">
-                    <h5 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-6 md:mb-8 text-content">The Firm</h5>
+                    <h5 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-6 md:mb-8 text-content">Our Firm</h5>
                     <ul className="text-muted text-xs md:text-sm space-y-4 font-light">
                         <li><Link className="hover:text-primary transition-colors" href="/about">About Us</Link></li>
                         <li><Link className="hover:text-primary transition-colors" href="/portfolio">Portfolio</Link></li>
@@ -34,9 +34,10 @@ export default function Footer() {
                 <div className="text-center md:text-left">
                     <h5 className="text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-6 md:mb-8 text-content">Follow</h5>
                     <ul className="text-muted text-xs md:text-sm space-y-4 font-light">
-                        <li><Link className="hover:text-primary transition-colors" href="#">Instagram</Link></li>
+                        <li><Link className="hover:text-primary transition-colors" href="#">WhatsApp</Link></li>
+                        <li><Link className="hover:text-primary transition-colors" href="#">Facebook</Link></li>
                         <li><Link className="hover:text-primary transition-colors" href="#">LinkedIn</Link></li>
-                        <li><Link className="hover:text-primary transition-colors" href="#">Behance</Link></li>
+                        <li><Link className="hover:text-primary transition-colors" href="#">Instagram</Link></li>
                     </ul>
                 </div>
             </div>

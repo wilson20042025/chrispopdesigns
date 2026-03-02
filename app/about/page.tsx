@@ -6,30 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutPage() {
-    const values = [
-        {
-            title: "Precision",
-            description: "Every millimeter is calculated. We bridge the gap between digital precision and physical reality through advanced fabrication techniques."
-        },
-        {
-            title: "Integration",
-            description: "We don't just design structures; we build them. Our dual expertise ensures that the most complex visions are structurally sound and perfectly executed."
-        },
-        {
-            title: "Innovation",
-            description: "By researching new materials and generative design algorithms, we push the boundaries of what is possible in modern architecture."
-        }
-    ];
 
     const team = [
         {
-            name: "Christian Pop",
-            role: "Principal / Founder",
+            name: "Gabriel Himie Wilson",
+            role: "Architect & Design / Founder",
             bio: "Driving the architectural vision with over 15 years of experience in structural fabrication and parametric design.",
-            image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCHyJcPBCF6ebsUGU7ZCypNmUKZVOynARX9M55AN1JZZOxWUU81CfgMkT0kY-PuJBgJoMS8Nt5Ej-BQqxOXnXIrWvC7rtZBPGycZi50JvmSR7WwQquBpldbRqxoFC9hWpm8h3rNN41csvdE_AgpO66QYOr9ZFvu00o7nWPMLPlzSUq1MvrCLkSPT5FtMP81cfkhEsNrUei7ldsm2Q1uNCpeHsfS_DP2zrkyEv8DgN_ZIIYMOUjxVhW1mQbIxXEWVv6p2XCdq7a7u4E"
+            image: "/gab.jpeg"
         },
         {
-            name: "Elena Vass",
+            name: "Roland ",
             role: "Head of 3D Visualization",
             bio: "Leading our cinematic rendering department, ensuring every architectural design is presented with life-like fidelity.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCwel83yexCP55LtI72ogmeT5ABAyTkeEYbyCCPnaBOx2cZHaCdaQlEZorwim6UO3-eC_j-YUinH0AhJVU9wgn2SJjuRwTCUDFhXipVIyneVZ4F-7o_g_8HcurlbykI2-UVQoHlFcvJxuZviP9Vj1bqDW6bfR6RKkEFYY1WI89kPQZCuHbqcGrrjNWKpsatV0B_uNlguuzfWENGdIwE-0PWKEg3GphFpABmLrFQbsFTWXRmyeZd0zG0p2_PdLbQehGXg2H27a64eNU"
@@ -61,7 +47,7 @@ export default function AboutPage() {
                                 Our Identity / Philosophy
                             </span>
                             <h1 className="text-5xl md:text-9xl font-black tracking-tighter text-content uppercase leading-[0.8] mb-12 animate-fade-in-up">
-                                We Are <br /> ChrisPopDesigns <br /> Incorporated.
+                                About Us.
                             </h1>
                         </div>
                         <div className="lg:col-span-7">
@@ -77,37 +63,7 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* Firm Culture / Image Section */}
-                <section className="px-6 md:px-16 max-w-[1440px] mx-auto pb-32">
-                    <div className="relative aspect-[21/9] overflow-hidden bg-sub transition-all duration-700 shadow-2xl shadow-primary/5">
-                        <Image
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMUrdaK7RHH-ozwFT4M7WQxEsy49dm56QTIIk4vInlO7rAZeYEMArRqDYGwGB16F2KRKbz5SZAGuZkcKJWBgUi3U_7XNtmqcpMVWOykK7emqQrQJzuyEq16v9ba30VOplcC4qZ5W6Tw5QqF4S09sdvDXHSVb7vwcgD_PcFRrd2SHHmG8nx6YaZhaHbbPSZ-UCDv8AXdMOZGY-4Ux7bgQppHBBCQWmyWCdWFzEhCBjKaYf4RNyWMGZXGK3b_4s9BJ49pScQeOMmS1A"
-                            alt="Firm Workshop Environment"
-                            fill
-                            className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60"></div>
-                        <div className="absolute bottom-12 left-12">
-                            <span className="text-white text-[10px] font-bold uppercase tracking-[0.5em] block mb-2">Firm Culture</span>
-                            <h3 className="text-white text-3xl font-black uppercase tracking-tighter">The Workshop Spirit</h3>
-                        </div>
-                    </div>
-                </section>
 
-                {/* Values Section */}
-                <section className="py-24 px-6 md:px-16 bg-sub border-y border-subtle">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
-                            {values.map((v, i) => (
-                                <div key={i} className="space-y-6">
-                                    <div className="w-12 h-1 bg-primary"></div>
-                                    <h3 className="text-2xl font-bold uppercase tracking-tight text-content">{v.title}</h3>
-                                    <p className="text-muted font-light leading-relaxed">{v.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
 
                 {/* Redesigned Team Section */}
                 <section className="py-32 px-6 md:px-16 max-w-7xl mx-auto overflow-hidden">

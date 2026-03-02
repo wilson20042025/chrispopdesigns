@@ -59,7 +59,7 @@ export default function ProjectsPage() {
                 <div className="mb-16 lg:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
                     <div className="max-w-2xl">
                         <h1 className="text-5xl lg:text-7xl font-black tracking-tighter text-content mb-6 uppercase leading-none">
-                            Selected <br /> Works
+                            Our <br /> Portfolio
                         </h1>
                         <p className="text-muted text-lg max-w-md leading-relaxed font-light">
                             A curated showcase of architectural precision and structural fabrication excellence.

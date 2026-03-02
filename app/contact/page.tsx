@@ -48,12 +48,12 @@ export default function ContactPage() {
                                 <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-muted">Offices</h3>
                                 <div className="space-y-6">
                                     <div className="space-y-1">
-                                        <p className="text-sm font-bold uppercase tracking-widest text-content">Berlin Office</p>
-                                        <p className="text-muted text-sm font-light">Kreativ Loft, Kreuzberg <br /> 10961 Berlin, Germany</p>
+                                        <p className="text-sm font-bold uppercase tracking-widest text-content">Liberia Office</p>
+                                        <p className="text-muted text-sm font-light">ELWA, Paynesville City <br /> 1000 Monrovia, Liberia</p>
                                     </div>
                                     <div className="space-y-1">
-                                        <p className="text-sm font-bold uppercase tracking-widest text-content">London Lab</p>
-                                        <p className="text-muted text-sm font-light">Vanguard Corporate <br /> SE1 2AU London, UK</p>
+                                        <p className="text-sm font-bold uppercase tracking-widest text-content">China Fab Lab</p>
+                                        <p className="text-muted text-sm font-light">Beijing <br /> 100871 Beijing, Chana</p>
                                     </div>
                                 </div>
                             </div>
@@ -62,16 +62,16 @@ export default function ContactPage() {
                                 <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-muted">Digital</h3>
                                 <div className="space-y-4">
                                     <a href="mailto:hello@chrispopdesign.com" className="block text-xl hover:text-primary transition-colors border-b border-subtle pb-4">
-                                        hello@chrispopdesign.com
+                                        chrispopdesigns@gmail.com
                                     </a>
-                                    <p className="text-muted text-sm font-light tracking-widest uppercase">+49 (0) 30 1234 5678</p>
+                                    <p className="text-muted text-sm font-light tracking-widest uppercase">+231 88 679-6691</p>
                                 </div>
                             </div>
 
                             <div className="space-y-8">
                                 <h3 className="text-xs font-bold uppercase tracking-[0.4em] text-muted">Follow</h3>
                                 <div className="flex gap-8">
-                                    {['Instagram', 'LinkedIn', 'Behance'].map((social) => (
+                                    {['WhatsApp', 'Facebook', 'LinkedIn', 'Instagram'].map((social) => (
                                         <a key={social} href="#" className="text-[10px] font-bold uppercase tracking-[0.2em] text-content hover:text-primary transition-colors">
                                             {social}
                                         </a>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                                             type="text"
                                             required
                                             className="w-full bg-transparent py-4 text-content outline-none font-light placeholder:text-muted/30"
-                                            placeholder="John Doe"
+                                            placeholder="Your Given Name"
                                             value={formState.name}
                                             onChange={(e) => setFormState({ ...formState, name: e.target.value })}
                                         />
@@ -101,7 +101,7 @@ export default function ContactPage() {
                                             type="email"
                                             required
                                             className="w-full bg-transparent py-4 text-content outline-none font-light placeholder:text-muted/30"
-                                            placeholder="john@example.com"
+                                            placeholder="email@example.com"
                                             value={formState.email}
                                             onChange={(e) => setFormState({ ...formState, email: e.target.value })}
                                         />
